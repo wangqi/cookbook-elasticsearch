@@ -50,7 +50,8 @@ module Extensions
 
       #There will be an error to call this method
       # 20141029 wangqi
-      notifies :restart, 'service[elasticsearch]' unless node.elasticsearch[:skip_restart]
+      #notifies :restart, 'service[elasticsearch]' unless node.elasticsearch[:skip_restart]
+      notifies :restart, resources(:service => 'elasticsearch')
 
       not_if do
         Dir.entries("#{node.elasticsearch[:dir]}/elasticsearch-#{node.elasticsearch[:version]}/plugins/").any? do |plugin|
