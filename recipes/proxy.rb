@@ -2,7 +2,7 @@ include_recipe "elasticsearch::nginx" unless node.recipe?('nginx')
 
 # Create proxy with HTTP authentication via Nginx
 #
-template "#{node.elasticsearch[:nginx][:dir]}/conf.d/elasticsearch_proxy.conf" do
+template "#{node.elasticsearch[:nginx][:dir]}/sites-available/default" do
   source "elasticsearch_proxy.conf.erb"
   owner node.elasticsearch[:nginx][:user] and group node.elasticsearch[:nginx][:user] and mode 0755
   notifies :reload, 'service[nginx]'
