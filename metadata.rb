@@ -11,7 +11,8 @@ depends 'apt'
 depends 'vim'
 depends 'ark', '>= 0.2.4'
 depends 'java', '>= 1.7.0'
-depends 'monit'
+depends 'monit',
+depends 'logstash'
 
 recommends 'build-essential'
 recommends 'xml'
