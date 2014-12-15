@@ -9,7 +9,7 @@ cookbook 'java', git: 'git://github.com/opscode-cookbooks/java.git'
 
 cookbook 'monit', git: 'git://github.com/wangqi/cookbook-monit.git'
 cookbook 'logstash', git: 'git://github.com/wangqi/cookbook-logstash.git'
-cookbook 'kibana', git: 'git://github.com:wangqi/cookbook-kibana.git'
+cookbook 'kibana', git: 'git://github.com/wangqi/cookbook-kibana.git'
 cookbook 'nginx', git: 'git://supermarket.getchef.com/cookbooks/nginx.git'
 
 cookbook 'vim'
