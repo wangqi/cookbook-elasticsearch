@@ -36,6 +36,12 @@ for discovering Elasticsearch nodes. This allows the cluster to operate without 
 without having to manually manage nodes.
 
 
+Test
+-----
+### Test logstash
+bin/logstash -e 'input { stdin { } } output { elasticsearch { host => "" } }'
+bin/logstash -e 'input { stdin { } } output { elasticsearch { cluster => 'elasticsearch-log-cluster }' }'
+
 Usage
 -----
 
