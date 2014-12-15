@@ -10,7 +10,6 @@ cookbook 'java', git: 'git://github.com/opscode-cookbooks/java.git'
 cookbook 'monit', git: 'git://github.com/wangqi/cookbook-monit.git'
 cookbook 'logstash', git: 'git://github.com/wangqi/cookbook-logstash.git'
 cookbook 'kibana', git: 'git://github.com/wangqi/cookbook-kibana.git'
-cookbook 'nginx', git: 'git://github.com/miketheman/nginx.git'
 
 cookbook 'vim'
 cookbook 'minitest-handler', git: 'git://github.com/btm/minitest-handler-cookbook.git'
