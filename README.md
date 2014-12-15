@@ -38,9 +38,16 @@ without having to manually manage nodes.
 
 Test
 -----
+
+### Test ElasticSearch
+curl 'http://localhost:9200/_cluster/health?pretty'
+
+查看录入结果
+curl 'http://localhost:9200/_search?pretty'
+
 ### Test logstash
 bin/logstash -e 'input { stdin { } } output { elasticsearch { host => "" } }'
-bin/logstash -e 'input { stdin { } } output { elasticsearch { cluster => 'elasticsearch-log-cluster }' }'
+bin/logstash -e 'input { stdin { } } output { elasticsearch { cluster => "<cluster_name>" } }'
 
 Usage
 -----
