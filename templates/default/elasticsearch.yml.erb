@@ -139,6 +139,7 @@ jmx.domain: elasticsearch
 <%- end -%>
 
 ################################## Custom #####################################
+http.cors.enabled: true
 
 <% node.elasticsearch[:custom_config].sort.each do |key, value| %>
 <%= key %>: <%= value %>
